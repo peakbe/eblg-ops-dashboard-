@@ -19,6 +19,7 @@ async function loadWeather(){
      ${data.raw}`;
 }
 
+
 }
 
 function updateRunwayIndicator(runway){
@@ -94,4 +95,5 @@ async function init(){
 }
 
 init();
+
 
