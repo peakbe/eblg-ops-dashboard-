@@ -11,15 +11,14 @@ async function fetchJSON(url,headers={}){
 }
 
 async function loadWeather(){
-  const data=await fetchJSON(
-    config.avwxBase+config.airportIcao,
-    {"Authorization":config.avwxApiKey}
-  );
+  const data = await fetchJSON(config.proxyMetar);
 
   document.getElementById("weather").innerHTML=
-    `Temp ${data.temperature.value}°C<br>
-     Vent ${data.wind_direction.value}°/${data.wind_speed.value}kt<br>
+    `Temp ${data.temperature?.value}°C<br>
+     Vent ${data.wind_direction?.value}°/${data.wind_speed?.value}kt<br>
      ${data.raw}`;
+}
+
 }
 
 function updateRunwayIndicator(runway){
@@ -95,3 +94,4 @@ async function init(){
 }
 
 init();
+
