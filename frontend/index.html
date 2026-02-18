@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>EBLG OPS Dashboard</title>
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+</head>
+
+<body>
+
+<header>
+  <h1>EBLG – OPS CONTROL ROOM</h1>
+  <div id="clock"></div>
+</header>
+
+<div class="grid">
+
+<div class="panel">
+  <h2>Météo</h2>
+  <div id="weather"></div>
+</div>
+
+<div class="panel runway-panel">
+  <h2>Piste Active</h2>
+  <div id="runwayIndicator" class="runway-box">--</div>
+</div>
+
+<div class="panel">
+  <h2>Arrivées</h2>
+  <div id="arrivals"></div>
+</div>
+
+<div class="panel">
+  <h2>Départs</h2>
+  <div id="departures"></div>
+</div>
+
+<div class="panel full">
+  <h2>Sonomètres</h2>
+  <div id="map"></div>
+</div>
+
+</div>
+
+<script src="config.js"></script>
+<script src="app.js"></script>
+
+</body>
+</html>

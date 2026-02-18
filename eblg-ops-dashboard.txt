@@ -1,0 +1,14 @@
+eblg-ops-dashboard/
+│
+├── frontend/
+│   ├── index.html
+│   ├── style.css
+│   ├── app.js
+│   ├── config.js
+│   └── sonometres.json
+│
+├── api/
+│   └── fids.js
+│
+├── package.json
+└── vercel.json

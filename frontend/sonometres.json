@@ -1,0 +1,4 @@
+[
+  {"name":"Nord","lat":50.645,"lon":5.44,"thresholdDB":65},
+  {"name":"Sud","lat":50.63,"lon":5.42,"thresholdDB":62}
+]
